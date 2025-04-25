@@ -70,7 +70,7 @@ const Home = () => {
         {!loading && results.length === 0 && 
           <div className="p-4">
             <p className="text-center py-2 text-gray-400">Search for anime by entering a title above</p>
-            <img src="/mashup_nofill.png" alt="anime character mashup" className="w-full -mt-18 -mb-14 object-cover opacity-80" />
+            <img src="/mashup_nofill.png" alt="anime character mashup" className="w-full object-cover opacity-80" />
           </div>}
         {!loading && results.length > 0 && <SortOrder sortOrder={sortOrder} handleSortChange={handleSortChange} />}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
